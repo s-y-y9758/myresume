@@ -155,15 +155,24 @@ window.onload = function() {
 		var bg = pageLast.querySelector('.bg');
 		var cup = pageLast.querySelector('.cup');
 		var paper = pageLast.querySelector('.paper');
+		var paperspan = paper.querySelector('span');
 		var pan = pageLast.querySelector('.pan');
 		var bag = pageLast.querySelector('.bag');
+		var thanks = pageLast.querySelector('.thanks');
+		var timg = thanks.querySelector('img');
+		var tH = thanks.querySelector('h4');
+		var thanksspan = thanks.querySelector('span');
 		for(var i = 0; i < rotate.length; i++) {
 			rotate[i].classList.add('show');
 		}
 		bg.classList.add('show');
 		cup.classList.add('show');
 		paper.classList.add('show');
+		paperspan.classList.add('show');
 		pan.classList.add('show');
+		timg.classList.add('show');
+		tH.classList.add('show');
+		thanksspan.classList.add('show');
 	}
 	hidePage[4] = function() {
 		var pageLast = document.querySelector('#pageLast');
@@ -172,14 +181,23 @@ window.onload = function() {
 		var bg = pageLast.querySelector('.bg');
 		var cup = pageLast.querySelector('.cup');
 		var paper = pageLast.querySelector('.paper');
+		var paperspan = paper.querySelector('span');
 		var pan = pageLast.querySelector('.pan');
+		var thanks = pageLast.querySelector('.thanks');
+		var timg = thanks.querySelector('img');
+		var tH = thanks.querySelector('h4');
+		var thanksspan = thanks.querySelector('span');
 		for(var i = 0; i < rotate.length; i++) {
 			rotate[i].classList.remove('show');
 		}
 		bg.classList.remove('show');
 		cup.classList.remove('show');
 		paper.classList.remove('show');
+		paperspan.classList.remove('show');
 		pan.classList.remove('show');
+		timg.classList.remove('show');
+		tH.classList.remove('show');
+		thanksspan.classList.remove('show');
 	}
 	function backMove(el) {
 		var back = el.querySelector('.back');
